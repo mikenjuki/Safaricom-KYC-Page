@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="./CSS/utilities.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./CSS/mobile.css">
+    <title>My Safaricom | Dealer KYC</title>
+</head>
+
+<body>
+
+    <header id="navbar" class="navbar">
+        <div class="navbar-top">
+            <div class="logo">
+                <img src="/images/SAF-MAIN-LOGO.png" alt="Safaricom Main Logo">
+            </div>
+
+            <div class="top-icons">
+                <a href="https://safaricom.com/search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                <a href="https://safaricom.com/notifications"><i class="fa-solid fa-bell"></i></a>
+            </div>
+        </div>
+
+        <div class="navbar-bottom">
+
+            <a href="#" class="primary-text">
+                <i class="fa-solid fa-address-card"></i>
+                <h1>Identity Verification</h1>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <h1>Upload Documents</h1>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-file-magnifying-glass"></i>
+                <h1>Dealer Details</h1>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="center-form" id="center-form">
+            <div class="verification-list">
+                <ul class="verification-steps">
+                    <li class="verification-step">
+                        <div class="top-step">
+                            <span class="circle-number" id="current-number">1</span>
+                            <h2>Enter Phone Number</h2>
+                            <p>Enter your primary phone number and accept the terms.</p>
+                            <input type="phone number" id="phone-number" name="phone-number"
+                                placeholder="Enter Phone Number">
+
+                            <div class="signup-form-checkbox">
+                                <input type="checkbox" id="agree-terms" required>
+                                <label for="agree-terms" class="agree-terms">I have read and understood the
+                                    <a href="https://www.safaricom.co.ke/dataprivacystatement/"
+                                        class="primary-text">Privacy Policy</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="button">Next</button>
+                        </div>
+                    </li>
+                    <li class="verification-step">
+                        <span class="circle-number">2</span>
+                        <h2>Enter OTP</h2>
+                    </li>
+                    <li class="verification-step">
+                        <span class="circle-number">3</span>
+                        <h2>Outlet Type</h2>
+                    </li>
+                    <li class="verification-step">
+                        <span class="circle-number">4</span>
+                        <h2>Confirm Details</h2>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <aside class="side-menu">
+        <a href="https://safaricom.com/dealer-kyc" class="current-aside aside-link">
+            <i class="fa-solid fa-house"></i>
+            <h1 class="side-menu_heading">Home</h1>
+        </a>
+
+        <a href="https://safaricom.com/mpesa" class="aside-link">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h1 class="side-menu_heading">M-Pesa</h1>
+        </a>
+        <a href="https://safaricom.com/account" class="aside-link">
+            <i class="fa-solid fa-user-large"></i>
+            <h1 class="side-menu_heading">My Account</h1>
+        </a>
+        <a href="https://safaricom.com/elimu" class="aside-link">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <h1 class="side-menu_heading">Elimu</h1>
+        </a>
+        <a href="https://safaricom.com/discover" class="aside-link">
+            <i class="fa-solid fa-gear"></i>
+            <h1 class="side-menu_heading">Discover</h1>
+        </a>
+        <a href="https://safaricom.com/help" class="aside-link">
+            <i class="fa-solid fa-comment"></i>
+            <h1 class="side-menu_heading">Help</h1>
+        </a>
+    </aside>
+</body>
+
+</html>

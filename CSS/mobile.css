@@ -78,7 +78,7 @@ body {
 .side-menu {
   display: block;
   position: fixed;
-  top: 18.5%;
+  top: 16%;
   left: -100%;
   transition: 0.25s;
   width: 80%;

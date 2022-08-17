@@ -39,12 +39,30 @@ body {
   align-items: center;
 }
 
+.navbar-bottom-links {
+  flex-grow: 2;
+}
+
 .navbar-bottom a:not(.primary-text) {
   display: none;
 }
 
 .navbar-bottom .primary-text {
   padding: 6px 0 6px 10px;
+}
+
+#navbar .navbar-bottom .hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .center-form {
@@ -61,5 +79,11 @@ body {
   display: block;
   position: fixed;
   top: 20%;
-  transform: translateX(-390px);
+  left: -100%;
+  transition: 0.25s;
+  width: 80%;
+}
+
+.side-menu:active {
+  left: 0;
 }

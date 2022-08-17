@@ -78,12 +78,12 @@ body {
 .side-menu {
   display: block;
   position: fixed;
-  top: 20%;
+  top: 18.5%;
   left: -100%;
   transition: 0.25s;
   width: 80%;
 }
 
-.side-menu:active {
+.side-menu.active {
   left: 0;
 }
